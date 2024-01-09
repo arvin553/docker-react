@@ -6,4 +6,4 @@ before_install:
   - docker build -t arvin/dokcer-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true arvin/docker-react npm run test
+  - docker run arvin/docker-react npm run test -- --converage
